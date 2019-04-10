@@ -1,9 +1,3 @@
-#tmux
-##Key Features
-+ Rebind ctl-b to ctl-a
-+ enable vi mode
-
-
-#vim
-##Key Features
-+ enable linenumbers
+# Dotfiles
+My tmux bash and vim configurations. Including a setup scrupt to create symbolic links. 
+This requires the dotfiles directory to be placed at ~
