@@ -12,3 +12,8 @@ ln -s ~/dotfiles/.bashrc ~/.bashrc
 
 #vim
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+
+#refresh configs
+exec bash
+tmux source-file ~/.tmux.conf
+source ~/.vimrc
