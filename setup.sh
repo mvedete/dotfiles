@@ -1,4 +1,8 @@
 #!/bin/sh
+#Remove any exisiting files
+rm ~/.tmux.conf
+rm ~/.bashrc
+rm ~/.vimrc
 
 #tmux
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
