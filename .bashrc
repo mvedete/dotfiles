@@ -109,3 +109,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias sublist3r='python3 ~/Documents/Tools/Sublist3r/sublist3r.py'
