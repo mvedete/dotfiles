@@ -110,4 +110,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias sublist3r='python3 ~/Documents/Tools/Sublist3r/sublist3r.py'
+alias sublist3r='python3 ~/Tools/Sublist3r/sublist3r.py'
