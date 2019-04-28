@@ -3,6 +3,7 @@
 rm ~/.tmux.conf
 rm ~/.bashrc
 rm ~/.vimrc
+rm ~/.bash_aliases
 
 #tmux
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
