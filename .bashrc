@@ -111,3 +111,5 @@ if ! shopt -oq posix; then
 fi
 
 alias sublist3r='python3 ~/Tools/Sublist3r/sublist3r.py'
+#PATH VARIABLES
+PATH=/root/Tools/nmaper/:$PATH
