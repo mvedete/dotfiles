@@ -9,4 +9,5 @@ set shiftwidth=2
 "Set Syntax
 syntax on
 
-
+"Use System Clipboard
+set clipboard=unamed
