@@ -1,23 +1,34 @@
-#!/bin/sh
-#Remove any exisiting files
-rm ~/.tmux.conf
-rm ~/.bashrc
-rm ~/.vimrc
-rm ~/.bash_aliases
+#!/bin/bash
+dotfilesDir=$(pwd)
 
-#tmux
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+function linkDotfile {
+  dest="${HOME}/${1}"
+  dateStr=$(date +%Y-%m-%d-%H%M)
 
-#bashrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
+  if [ -h ~/${1} ]; then
+    # Existing symlink 
+    echo "Removing existing symlink: ${dest}"
+    rm ${dest} 
 
-#bash_aliases
-ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
+  elif [ -f "${dest}" ]; then
+    # Existing file
+    echo "Backing up existing file: ${dest}"
+    mv ${dest}{,.${dateStr}}
 
-#vim
-ln -s ~/dotfiles/.vimrc ~/.vimrc
+  elif [ -d "${dest}" ]; then
+    # Existing dir
+    echo "Backing up existing dir: ${dest}"
+    mv ${dest}{,.${dateStr}}
+  fi
 
-#refresh configs
-exec bash
-tmux source-file ~/.tmux.conf
-source ~/.vimrc
+  echo "Creating new symlink: ${dest}"
+  ln -s ${dotfilesDir}/${1} ${dest}
+}
+
+#linkDotfile .vim
+linkDotfile .vimrc
+#linkDotfile .ackrc
+linkDotfile .bashrc
+#linkDotfile .gitconfig
+linkDotfile .tmux.conf
+#linkDotfile .goomwwmrc
