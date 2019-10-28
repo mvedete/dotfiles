@@ -23,12 +23,16 @@ function linkDotfile {
 
   echo "Creating new symlink: ${dest}"
   ln -s ${dotfilesDir}/${1} ${dest}
+	
 }
 
 #linkDotfile .vim
 linkDotfile .vimrc
+linkDotfile .bash_aliases
 #linkDotfile .ackrc
 linkDotfile .bashrc
 #linkDotfile .gitconfig
 linkDotfile .tmux.conf
 #linkDotfile .goomwwmrc
+
+source ~/.bashrc
