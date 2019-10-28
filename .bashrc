@@ -81,7 +81,9 @@ function gitPrompt {
 # Patent Pending Prompt
 export PS1="${nameC}\u${atC}@${hostC}\h:${pathC}\w${gitC}\$(gitPrompt)${pointerC}▶${normalC} "
 
-
+if [ -f ~/.bash_aliases ]; then
+	source ~/.bash_aliases
+fi
 
 #PATH VARIABLES
 PATH=/root/Tools/nmaper/:$PATH
