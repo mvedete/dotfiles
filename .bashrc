@@ -64,7 +64,7 @@ atC="${txtpur}"
 nameC="${txtpur}"
 hostC="${txtpur}"
 pathC="${txtgrn}"
-#gitC="${txtpur}"
+gitC="${txtpur}"
 pointerC="${txtgrn}"
 normalC="${txtwht}"
 
