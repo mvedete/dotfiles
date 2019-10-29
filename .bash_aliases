@@ -8,4 +8,4 @@ alias c='clear'
 alias la='ls -la'
 alias sublist3r='python3 ~/Tools/Sublist3r/sublist3r.py'
 alias grep='grep --color=auto'
-
+alias python3='python3 -B'
