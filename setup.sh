@@ -36,3 +36,4 @@ linkDotfile .tmux.conf
 #linkDotfile .goomwwmrc
 
 source ~/.bashrc
+source ~/.bash_aliases
