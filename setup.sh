@@ -37,3 +37,5 @@ linkDotfile .tmux.conf
 
 source ~/.bashrc
 source ~/.bash_aliases
+# Clone tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
