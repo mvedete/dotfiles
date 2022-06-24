@@ -23,6 +23,8 @@ export TERM=xterm-256color
 
 # Obviously.
 export EDITOR=/usr/bin/vim
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Colours have names too. Stolen from Arch wiki
 txtblk='\[\e[0;30m\]' # Black - Regular
@@ -87,5 +89,10 @@ fi
 
 #PATH VARIABLES
 PATH=/root/Tools/nmaper/:$PATH
+# I'd quite like for Go to work please.
+export PATH=${PATH}:/usr/local/go/bin
+export GOPATH=~/go
+
+
 
 PYTHONDONTWRITEBYTECODE=1
