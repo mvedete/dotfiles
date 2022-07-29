@@ -26,16 +26,12 @@ function linkDotfile {
 	
 }
 
-#linkDotfile .vim
 linkDotfile .vimrc
 linkDotfile .bash_aliases
-#linkDotfile .ackrc
 linkDotfile .bashrc
-#linkDotfile .gitconfig
 linkDotfile .tmux.conf
-#linkDotfile .goomwwmrc
+linkDotfile .zshrc
+linkDotfile .zsh_aliases
 
-source ~/.bashrc
-source ~/.bash_aliases
 # Clone tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
