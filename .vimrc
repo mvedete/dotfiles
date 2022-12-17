@@ -1,5 +1,5 @@
 "Set Line Numbers
-set number
+set relativenumber
 
 "Set Tab Width
 set tabstop=2
@@ -12,3 +12,17 @@ syntax on
 "Use System Clipboard
 set clipboard=unnamed
 
+" Disable Arrow keys in Normal mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" jk to escape
+imap jk <Esc>
